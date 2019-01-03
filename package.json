@@ -1,17 +1,37 @@
 {
-  "name": "twatter",
+  "name": "twitter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.7.1",
+    "firebase": "^5.7.2",
+    "firebaseui": "^3.5.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-firebaseui": "^3.1.2",
+    "react-linkify": "^0.2.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-and-deploy": "react-scripts build && firebase deploy",
+    "firebase-deploy": "firebase deploy",
+    "firebase-deploy--hosting": "firebase deploy --only hosting",
+    "firebase-deploy--rules": "firebase deploy --only firestore:rules",
+    "firebase-deploy--functions": "firebase deploy --only functions"
   },
   "eslintConfig": {
     "extends": "react-app"
